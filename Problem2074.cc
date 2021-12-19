@@ -2,8 +2,8 @@
 // Created by Efim Pyshnograev on 18/11/21.
 //
 
-#include <initializer_list>
 #include "vector"
+#include <initializer_list>
 
 struct ListNode {
   int val{};
@@ -13,11 +13,12 @@ struct ListNode {
   ListNode(int x) : val(x), next(nullptr) {}
   ListNode(int x, ListNode *next) : val(x), next(next) {}
 
-  ListNode(const std::initializer_list<int> &list) :
-      ListNode(list.begin(), list.end()) {}
+  ListNode(const std::initializer_list<int> &list)
+      : ListNode(list.begin(), list.end()) {}
 
   ListNode(const std::initializer_list<int>::iterator begin,
-           const std::initializer_list<int>::iterator end) : val(*begin) {
+           const std::initializer_list<int>::iterator end)
+      : val(*begin) {
     if (begin + 1 != end) {
       next = new ListNode(begin + 1, end);
     }
@@ -43,13 +44,11 @@ struct ListNode {
     return (*next) == (*rhs.next);
   }
 
-  ~ListNode() {
-    delete next;
-  }
+  ~ListNode() { delete next; }
 };
 
 class Solution {
- public:
+public:
   ListNode *append(ListNode *node, int value) {
     if (node->val == -1) {
       // This is head. Just fill it.
@@ -57,7 +56,7 @@ class Solution {
       return node;
     }
 
-    ListNode* next = new ListNode(value);
+    ListNode *next = new ListNode(value);
     node->next = next;
     return next;
   }

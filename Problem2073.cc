@@ -5,7 +5,7 @@
 #include "vector"
 
 class Solution {
- public:
+public:
   int timeRequiredToBuy(const std::vector<int> &tickets, int k) {
     int result = 0;
     for (int i = 0; i <= k; i++) {

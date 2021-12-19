@@ -9,7 +9,7 @@ public:
   // Precondition: hist's last element should be 0
   int maxInHistogram(const std::vector<int> &hist) {
     assert(hist[hist.size() - 1] == 0);
-    std::vector<std::pair<int, int> > stack;
+    std::vector<std::pair<int, int>> stack;
     int best = 0;
     for (int i = 0; i < hist.size(); ++i) {
       int earliest_with_at_least = i;
@@ -24,7 +24,7 @@ public:
     return best;
   }
 
-  int maximalRectangle(std::vector<std::vector<char> > &matrix) {
+  int maximalRectangle(std::vector<std::vector<char>> &matrix) {
     if (matrix.empty()) {
       return 0;
     }
