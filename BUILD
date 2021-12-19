@@ -3,6 +3,7 @@ cc_library(
     hdrs = [
         "Problem2073.cc",
         "Problem2074.cc",
+        "Problem2103.cc",
         "Problem84.cc",
         "Problem85.cc",
     ],
@@ -13,6 +14,7 @@ cc_test(
     srcs = [
         "Problem2073Test.cc",
         "Problem2074Test.cc",
+        "Problem2103Test.cc",
         "Problem85Test.cc",
     ],
     deps = [
