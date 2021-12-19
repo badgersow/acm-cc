@@ -1,0 +1,1 @@
+In this repository I solve competitive programming problems in C++
