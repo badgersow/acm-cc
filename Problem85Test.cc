@@ -6,6 +6,7 @@
 #include "vector"
 #include "gtest/gtest.h"
 
+namespace Problem85 {
 TEST(Problem85, Trivial) {
   std::vector<std::vector<char>> input{{'1'}};
   Solution solution;
@@ -79,3 +80,4 @@ TEST(Problem85, HistogramCustom1) {
   int actual = solution.maxInHistogram(hist);
   EXPECT_EQ(actual, 3);
 }
+} // namespace Problem85

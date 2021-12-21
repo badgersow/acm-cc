@@ -5,6 +5,7 @@
 #include "vector"
 #include <initializer_list>
 
+namespace Problem2074 {
 struct ListNode {
   int val{};
   ListNode *next{nullptr};
@@ -17,7 +18,7 @@ struct ListNode {
       : ListNode(list.begin(), list.end()) {}
 
   ListNode(const std::initializer_list<int>::iterator begin,
-           const std::initializer_list<int>::iterator end)
+               const std::initializer_list<int>::iterator end)
       : val(*begin) {
     if (begin + 1 != end) {
       next = new ListNode(begin + 1, end);
@@ -71,7 +72,6 @@ public:
     }
 
     int group_size = 1;
-    bool reversed = false;
     int i = 0;
 
     ListNode *new_head = new ListNode(-1);
@@ -98,3 +98,4 @@ public:
     return new_head;
   }
 };
+} // namespace Problem2074

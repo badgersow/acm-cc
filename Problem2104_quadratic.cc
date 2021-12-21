@@ -3,6 +3,7 @@
 #include <iostream>
 #include <ostream>
 
+namespace Problem2104_quadratic {
 class Solution {
 public:
   long long subArrayRanges(std::vector<int> &a) {
@@ -21,3 +22,4 @@ public:
     return result;
   }
 };
+} // namespace Problem2104_quadratic

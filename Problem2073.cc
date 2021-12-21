@@ -4,6 +4,7 @@
 
 #include "vector"
 
+namespace Problem2073 {
 class Solution {
 public:
   int timeRequiredToBuy(const std::vector<int> &tickets, int k) {
@@ -17,3 +18,4 @@ public:
     return result;
   }
 };
+} // namespace Problem2073

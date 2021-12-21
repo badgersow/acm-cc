@@ -4,6 +4,7 @@
 
 #include "vector"
 
+namespace Problem84 {
 class Solution {
 public:
   int largestRectangleArea(std::vector<int> &hist) {
@@ -23,3 +24,4 @@ public:
     return best;
   }
 };
+} // namespace Problem84

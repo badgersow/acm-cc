@@ -4,6 +4,7 @@
 
 #include "vector"
 
+namespace Problem85 {
 class Solution {
 public:
   // Precondition: hist's last element should be 0
@@ -43,3 +44,4 @@ public:
     return best;
   }
 };
+} // namespace Problem85

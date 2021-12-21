@@ -6,6 +6,7 @@
 #include "memory"
 #include "gtest/gtest.h"
 
+namespace Problem2074 {
 void compare(const std::initializer_list<int> &input_list,
              const std::initializer_list<int> &expected_list) {
   Solution solution;
@@ -30,3 +31,4 @@ TEST(Problem2074, Sample2) { compare({1, 1, 0, 6}, {1, 0, 1, 6}); }
 TEST(Problem2074, Sample3) { compare({1, 1, 0, 6, 5}, {1, 0, 1, 5, 6}); }
 
 TEST(Problem2074, Sample4) { compare({1, 2}, {1, 2}); }
+} // namespace Problem2074

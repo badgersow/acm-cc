@@ -3,6 +3,7 @@
 #include <cstdlib>
 #include <stdexcept>
 
+namespace Problem2103 {
 class Solution {
   int color_mask(char color) {
     switch (color) {
@@ -37,3 +38,4 @@ public:
     return result;
   }
 };
+} // namespace Problem2103
