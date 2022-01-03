@@ -1,6 +1,7 @@
 cc_library(
     name = "lib",
     hdrs = [
+        "Problem1383.cc",
         "Problem2073.cc",
         "Problem2074.cc",
         "Problem2103.cc",
@@ -16,6 +17,7 @@ cc_library(
 cc_test(
     name = "test",
     srcs = [
+        "Problem1383Test.cc",
         "Problem2073Test.cc",
         "Problem2074Test.cc",
         "Problem2103Test.cc",
