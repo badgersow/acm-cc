@@ -7,6 +7,7 @@ cc_library(
         "Problem2104_linear.cc",
         "Problem2104_quadratic.cc",
         "Problem2105.cc",
+        "Problem2106.cc",
         "Problem84.cc",
         "Problem85.cc",
     ],
@@ -21,6 +22,7 @@ cc_test(
         "Problem2104Test_linear.cc",
         "Problem2104Test_quadratic.cc",
         "Problem2105Test.cc",
+        "Problem2106Test.cc",
         "Problem85Test.cc",
     ],
     deps = [
